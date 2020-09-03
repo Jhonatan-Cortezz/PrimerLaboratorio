@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio1.Salario">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtNombre"
+                android:hint="Nombre del trabajador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtSueldo"
+                android:layout_marginTop="25dp"
+                android:hint="Sueldo mensual"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/rdTarde"
+                android:text="¿Llego tarde?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtQytMinutos"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:visibility="gone"
+                android:hint="cant. de minutos tardes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:text="Calcular"
+                android:background="@color/boton"
+                android:textColor="@color/botonTexto"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnNuevo"
+                android:text="Nuevo"
+                android:background="@color/boton"
+                android:textColor="@color/botonTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDescuento"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtRenta"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtSalario"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
